@@ -38,7 +38,6 @@ pipeline {
                 // Get some code from a GitHub repository
                 bat "mvn test"
 
-                // Run Maven on a Unix agent.
 
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
