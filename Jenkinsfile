@@ -51,7 +51,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 // git 'https://github.com/sep-2024-trivandrum/authentication-service'
                 bat "docker build -t registery-image ."
-                bat "docker create network -d bridge chethan-network"
+                bat "docker network create -d bridge chethan-network"
 			    bat "docker run --network chethan-network -p 8090:8090 -d --name registery-sr-container registery-image"
 
             }
